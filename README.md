@@ -5,7 +5,8 @@ This repository provides a Dockerised setup for [Ontop](https://ontop-vkg.org/) 
 The mappings used in this framework are based on an ontologised conceptual model, largely oriented to NCIT terms. An advantage of this approach is that the model can be extended to include other ontologies, which is also reflected in the SPARQL endpoint.
 
 The figure below is a simplified illustration of the conceptual model used in this framework:
-![Simplified illustration of the conceptual model used in this framework](examples/CM-illustration.jpg)
+<!-- ![Simplified illustration of the conceptual model used in this framework](examples/CM-illustration.jpg) -->
+<img src="examples/CM-illustration.jpg" alt="Simplified illustration of the conceptual model used in this framework" width="90%" height="auto">
 
 ###  Requirements
 

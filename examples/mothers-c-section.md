@@ -1,4 +1,4 @@
-### Research Question: *List mothers who received a C-section and their age.* 
+### Research Question: *List mothers who received a C-section and their age* 
 
 |Concept| Related Ontology Term/Code |
 |----------|-------------|
