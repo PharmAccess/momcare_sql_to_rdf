@@ -31,7 +31,7 @@ target		:Encounter/{id} a ncit:NCIT_C62143 ; ncit:NCIT_C25688 {status} ; hl7:v3-
 source		SELECT id, status, json_extract(class, 'code') AS code, json_extract_string(type,'$[0].coding[0].code') AS type FROM "main"."Encounter";
 
 mappingId	MAP-Cond-Encounter
-target		:Condition/{id} :encounter :Encounter/{encounter} . 
+target		:Condition/{id} :context :Encounter/{encounter} . 
 source		SELECT id, REPLACE(json_extract_path_text(encounter, 'reference'), 'Encounter/', '') AS encounter FROM "main"."Condition";
 
 mappingId	MAP-Enc-Patient
@@ -47,7 +47,7 @@ target		:Procedure/{id} bio:subject :Patient/{pat} .
 source		SELECT id, REPLACE(json_extract_path_text(subject, 'reference'), 'Patient/', '') AS pat FROM "main"."Procedure";
 
 mappingId	MAP-Procedure-Encounter
-target		:Procedure/{id} :encounter :Encounter/{encounter} . 
+target		:Procedure/{id} :context :Encounter/{encounter} . 
 source		SELECT id, REPLACE(json_extract_path_text(encounter, 'reference'), 'Encounter/', '') AS encounter FROM "main"."Procedure";
 
 mappingId	MAP-MedicationDispense

@@ -2,8 +2,10 @@
 
 This repository provides a Dockerised setup for [Ontop](https://ontop-vkg.org/) with preloaded R2RML mappings and an instance of [DuckDB](https://duckdb.org/) containing a MomCARE sample dataset. It is intended to demonstrate virtual knowledge graph querying using SPARQL over relational data in DuckDB.
 
-The mappings used in this framework are based on an ontologised conceptual model that is mostly based on NCIT terms. One benefit of this approach is that the model can be extended and other ontologies included, which is also reflected on the SPARQL endpoint.
+The mappings used in this framework are based on an ontologised conceptual model, largely oriented to NCIT terms. An advantage of this approach is that the model can be extended to include other ontologies, which is also reflected in the SPARQL endpoint.
 
+The figure below is a simplified illustration of the conceptual model used in this framework:
+![Simplified illustration of the conceptual model used in this framework](examples/CM-illustration.jpg)
 
 ###  Requirements
 
@@ -19,9 +21,9 @@ git clone https://github.com/PharmAccess/momcare_sql_to_rdf.git
 cd momcare_sql_to_rdf
 ```
 
-### 2. Build and run the docker container
+### 2. Run the docker container
 ```
-docker compose up --build
+docker compose up
 ```
 This will:
 -   Start an Ontop SPARQL endpoint
@@ -32,8 +34,8 @@ This will:
 Once the container is running, you access the SPARQL GUI at `http://localhost:8080/` via your browser.
 
 Examples of queries:
-- [to be included]
-- [to be included]
+- [List mothers who received a C-section and their age](examples/mothers-c-section.md)
+- [List patients that were diagnosed with hypertension during their pregnancy](examples/patients-hypertension.md)
 
 ---
 
