@@ -6,7 +6,7 @@ The mappings used in this framework are based on an ontologised conceptual model
 
 The figure below is a simplified illustration of the conceptual model used in this framework:
 <!-- ![Simplified illustration of the conceptual model used in this framework](examples/CM-illustration.jpg) -->
-<img src="examples/CM-illustration.jpg" alt="Simplified illustration of the conceptual model used in this framework" width="90%" height="auto">
+<img src="examples/CM-illustration.jpg" alt="Simplified illustration of the conceptual model used in this framework" width="80%" height="auto" align="center">
 
 ###  Requirements
 
